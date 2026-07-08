@@ -286,12 +286,12 @@ body,html{
 }
 
 .display-image{
-    width:96px;
+    width:180px;
     height:96px;
     display:block;
     border-radius:0;
-    -o-object-fit:cover;
-    object-fit:cover
+    -o-object-fit:contain;
+    object-fit:contain
 }
 .text-center{
     text-align:center
