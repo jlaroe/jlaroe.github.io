@@ -1474,8 +1474,8 @@ body,html{
     display: block; /* updated */
     margin-top: 0; /* updated */
     margin-bottom: 22px; /* updated */
-    font-size: 1.15rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
     line-height: 1.35;
     letter-spacing: 0.02em;
 }
