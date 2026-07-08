@@ -1451,3 +1451,61 @@ body,html{
         transform: translateY(-2000px);
     }
 }
+
+/* ========================= */
+/* assets/css/style.css ADD TO BOTTOM */
+/* ========================= */
+
+/* updated: spacing around each major h2 link section */
+.link-section {
+    margin-top: 36px;
+    margin-bottom: 46px;
+}
+
+/* updated: smaller space for first section since page title already has spacing */
+.link-section.mt-24 {
+    margin-top: 28px;
+}
+
+/* updated: h2 section styling */
+.section-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-top: 0;
+    margin-bottom: 18px;
+    letter-spacing: 0.02em;
+}
+
+/* updated: consistent spacing between link buttons inside each section */
+.link-section .page-item-wrap {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+/* updated: prevents extra gap after final link in each section */
+.link-section .page-item-wrap:last-child {
+    margin-bottom: 0;
+}
+
+/* updated: gives the full page a little more breathing room at the bottom */
+.page-full-wrap {
+    padding-bottom: 96px;
+}
+
+/* updated: optional mobile tightening so sections do not feel too stretched */
+@media (max-width: 480px) {
+    .link-section {
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        font-size: 1.05rem;
+        margin-bottom: 14px;
+    }
+
+    .link-section .page-item-wrap {
+        margin-bottom: 12px;
+    }
+}
