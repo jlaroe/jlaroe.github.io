@@ -289,7 +289,7 @@ body,html{
     width:96px;
     height:96px;
     display:block;
-    border-radius:50%;
+    border-radius:8px;
     -o-object-fit:cover;
     object-fit:cover
 }
