@@ -1456,56 +1456,42 @@ body,html{
 /* assets/css/style.css ADD TO BOTTOM */
 /* ========================= */
 
-/* updated: spacing around each major h2 link section */
+/* updated: force visible spacing between major sections */
 .link-section {
-    margin-top: 36px;
-    margin-bottom: 46px;
+    padding-top: 28px; /* updated */
+    padding-bottom: 34px; /* updated */
+    margin-top: 0; /* updated */
+    margin-bottom: 0; /* updated */
 }
 
-/* updated: smaller space for first section since page title already has spacing */
-.link-section.mt-24 {
-    margin-top: 28px;
+/* updated: remove extra top padding from first section */
+.link-section:first-of-type {
+    padding-top: 24px; /* updated */
 }
 
-/* updated: h2 section styling */
+/* updated: h2 spacing */
 .section-title {
+    display: block; /* updated */
+    margin-top: 0; /* updated */
+    margin-bottom: 22px; /* updated */
     font-size: 1.15rem;
     font-weight: 700;
     line-height: 1.35;
-    margin-top: 0;
-    margin-bottom: 18px;
     letter-spacing: 0.02em;
 }
 
-/* updated: consistent spacing between link buttons inside each section */
+/* updated: force space between buttons */
 .link-section .page-item-wrap {
-    margin-top: 0;
-    margin-bottom: 14px;
+    margin-top: 0; /* updated */
+    margin-bottom: 16px; /* updated */
 }
 
-/* updated: prevents extra gap after final link in each section */
+/* updated: keeps final button from adding weird extra button gap */
 .link-section .page-item-wrap:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0; /* updated */
 }
 
-/* updated: gives the full page a little more breathing room at the bottom */
-.page-full-wrap {
-    padding-bottom: 96px;
-}
-
-/* updated: optional mobile tightening so sections do not feel too stretched */
-@media (max-width: 480px) {
-    .link-section {
-        margin-top: 32px;
-        margin-bottom: 40px;
-    }
-
-    .section-title {
-        font-size: 1.05rem;
-        margin-bottom: 14px;
-    }
-
-    .link-section .page-item-wrap {
-        margin-bottom: 12px;
-    }
+/* updated: optional visual divider so sections feel clearly separated */
+.link-section + .link-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.16); /* updated */
 }
