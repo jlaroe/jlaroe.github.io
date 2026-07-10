@@ -371,12 +371,15 @@ body,html{
 }
 
 .link-each-image{
-    width:43px;
-    height:43px;
+    width:43px;                  /* updated: uniform logo box */
+    height:43px;                 /* updated: uniform logo box */
     position:absolute;
     left:9px;
-    -o-object-fit:cover;
-    object-fit:cover
+    top:50%;                     /* updated: center every logo vertically */
+    transform:translateY(-50%);  /* updated: center every logo vertically */
+    -o-object-fit:contain;       /* updated: preserve each logo's proportions */
+    object-fit:contain;          /* updated: preserve each logo's proportions */
+    object-position:center;      /* updated: keep every logo centered */
 }
 
 .page-logo{
@@ -1495,4 +1498,3 @@ body,html{
 .link-section + .link-section {
     border-top: 1px solid rgba(255, 255, 255, 0.16); /* updated */
 }
-
